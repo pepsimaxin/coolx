@@ -13,6 +13,28 @@
 
 集成 CoolX 之前，请先将应用更新到 AndroidX 库，如项目使用库较老，请迁移至 [AndroidX](https://developer.android.google.cn/jetpack/androidx/migrate?hl=zh-cn)。
 
+![Static Badge](https://img.shields.io/badge/jitpack-0.0.1-green)
+
+1. 项目目录下<br>
+   build.gradle.kts 添加：
+
+```kts
+implementation 'com.github.pepsimaxin:coolx:0.0.1'
+```
+
+2. 工程目录下<br>
+   settings.gradle.kts 添加：
+
+```kts
+dependencyResolutionManagement {
+    repositoriesMode.set(RepositoriesMode.FAIL_ON_PROJECT_REPOS)
+    repositories {
+        ...
+        maven { url = uri("https://jitpack.io") }
+    }
+}
+```
+
 ## Tips
 
 ✅ 项目中实现 CoolX AlertDialog 效果，只需要「 配置主题 」及「 替换包名 」即可！
