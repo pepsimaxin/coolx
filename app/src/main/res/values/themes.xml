@@ -2,6 +2,11 @@
     <!-- Base application theme. -->
     <style name="Base.Theme.Coolx" parent="Theme.AppCompat.DayNight">
         <item name="colorPrimaryVariant">@color/x_color_primary_variant</item>
+        <item name="android:statusBarColor">?attr/colorPrimaryVariant</item>
+        <item name="android:navigationBarColor">?attr/colorPrimaryVariant</item>
+        <item name="android:windowLightStatusBar">true</item>
+        <item name="android:windowTranslucentStatus">false</item>
+
         <!-- 全局替换 AlertDialog 主题 -->
         <item name="alertDialogTheme">@style/CoolX.AlertDialog.Theme</item>
         <item name="alertDialogStyle">@style/CoolX.AlertDialog.Style</item>
