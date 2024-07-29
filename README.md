@@ -94,32 +94,93 @@ AlertDialog.Builder(this)
 |:---:|:---:|
 |![](screenshot/light/bottom_dialog_normal.png)|![](screenshot/light/bottom_dialog_normal.png)|
 
-```kotlin
-// 不带有 Icon 的常规弹窗
-AlertDialog.Builder(this)
-        .setTitle(R.string.coolx_bottom_dialog_title)      // 设置 Title
-        .setMessage(R.string.coolx_bottom_dialog_message)  // 设置 Message
-        .setPositiveButton(R.string.common_confirm, null)  // 设置就有「确定」按钮
-        .setNegativeButton(R.string.common_cancel, null)   // 设置就有「取消」按钮
-        .show()
-```
-
 ### Bottom Dialog - 堆叠按钮
 
 对于部分业务 UI 要求，按钮的文案较长，则可设置 BOTTOM_STACK 类型，创建堆叠样式弹窗。
 
 ```kotlin
 AlertDialog.Builder(this)
-        .setDialogType(AlertDialog.BOTTOM_STACK)
-        .setIcon(R.drawable.cool_design_logo_no_bg)
-        .setTitle("默认应用")
-        .setMessage("将百度网盘设为您的默认短信应用吗？")
-        .setPositiveButton("设为默认应用") { _: DialogInterface?, _: Int ->
-                // do your action
-        }
-        .setNegativeButton(R.string.common_cancel, null)
-        .show()
+    .setDialogType(AlertDialog.BOTTOM_STACK)
+    .setIcon(R.drawable.cool_design_logo_no_bg)
+    .setTitle("默认应用")
+    .setMessage("将百度网盘设为您的默认短信应用吗？")
+    .setPositiveButton("设为默认应用") { _: DialogInterface?, _: Int ->
+        // do your action
+    }
+    .setNegativeButton(R.string.common_cancel, null)
+    .show()
 ```
+
+|Bottom 弹窗(常规 + 浅色 + 堆叠按钮) | Bottom 弹窗(常规 + 深色 + 堆叠按钮)|
+|:---:|:---:|
+|![](screenshot/light/bottom_dialog_normal_stack.png)|![](screenshot/light/bottom_dialog_normal_stack.png)|
+
+### Bottom Dialog - 选择弹窗
+
+```kotlin
+// 单选
+private val country = arrayOf<CharSequence>("中国", "美国", "意大利", "葡萄牙", "俄罗斯", "法国")
+
+AlertDialog.Builder(this)
+    .setTitle(R.string.x_bottom_dialog_single_select_title)
+    .setSingleChoiceItems(country, 2) {
+            _: DialogInterface?, which: Int ->
+        Toast.makeText(this, "which = " + which + ", select:" + country[which], Toast.LENGTH_SHORT).show()
+    }
+    .setPositiveButton(coolx.appcompat.R.string.common_confirm, null)
+    .show()
+```
+
+|Bottom 弹窗(列表 + 单选 + 浅色) | Bottom 弹窗(常规 + 单选 + 深色)|
+|:---:|:---:|
+|![](screenshot/light/bottom_dialog_single_select.png)|![](screenshot/light/bottom_dialog_single_select.png)|
+
+```kotlin
+// 多选
+private val province = arrayOf("北京", "上海", "南京", "深圳", "成都")
+
+AlertDialog.Builder(this)
+    .setTitle(R.string.x_bottom_dialog_multi_select_title)
+    .setMultiChoiceItems(province, booleanArrayOf(false, false, true, false, true)) {
+          _: DialogInterface?, _: Int, _: Boolean -> }
+    .setPositiveButton(coolx.appcompat.R.string.common_confirm, null)
+    .setNegativeButton(coolx.appcompat.R.string.common_cancel, null)
+    .show()
+```
+
+|Bottom 弹窗(列表 + 多选 + 浅色) | Bottom 弹窗(常规 + 多选 + 深色)|
+|:---:|:---:|
+|![](screenshot/light/bottom_dialog_multi_select.png)|![](screenshot/light/bottom_dialog_multi_select.png)|
+
+### Bottom Dialog - 完成弹窗
+
+```kotlin
+AlertDialog.Builder(this)
+    .setDialogType(AlertDialog.DONE)
+    .setIcon(coolx.appcompat.R.drawable.coolx_preset_icon_done)
+    .setTitle(R.string.x_bottom_dialog_done_title)
+    .setPositiveButton(coolx.appcompat.R.string.common_confirm, null)
+    .show()
+```
+
+|Bottom 弹窗(完成 + 浅色) | Bottom 弹窗(完成 + 深色)|
+|:---:|:---:|
+|![](screenshot/light/bottom_dialog_done.png)|![](screenshot/light/bottom_dialog_done.png)|
+
+### Bottom Dialog - 输入弹窗
+
+```kotlin
+AlertDialog.Builder(this)
+    .setDialogType(AlertDialog.INPUT)
+    .setTitle(R.string.x_bottom_dialog_input_title)
+    .setPositiveButton(coolx.appcompat.R.string.common_confirm) { _: DialogInterface?, _: Int -> }
+    .setNegativeButton(coolx.appcompat.R.string.common_cancel, null)
+    .show()
+```
+
+|Bottom 弹窗(输入 + 浅色) | Bottom 弹窗(输入 + 深色)|
+|:---:|:---:|
+|![](screenshot/light/bottom_dialog_input.png)|![](screenshot/light/bottom_dialog_input.png)|
 
 ## License
 
