@@ -1,0 +1,38 @@
+<resources>
+    <string name="app_name" translatable="false">COOLX</string>
+
+    <string name="x_dialog_type_default">Default</string>
+    <string name="x_dialog_type_center">Center</string>
+    <string name="x_dialog_type_float">Float</string>
+    <string name="x_dialog_type_special">Special</string>
+
+    <string name="x_dialog_type_default_summary">Bottom Style Dialog</string>
+    <string name="x_dialog_type_center_summary">Center Style Dialog</string>
+    <string name="x_dialog_type_float_summary">Float Style Dialog</string>
+    <string name="x_dialog_type_special_summary">Example: Time/Data Style Dialog</string>
+
+    <!-- Dialog String -->
+    <string name="x_bottom_dialog_title">Bottom Dialog</string>
+    <string name="x_bottom_dialog_message">
+        "On the vast ocean, strong winds rolled up dark clouds, and between the dark clouds and the sea there was a seagull flying proudly.\nSometimes its wings touched the waves, and sometimes it rushed towards the dark clouds like an arrow. It shouted, and in the bird's brave shouts, the dark clouds heard joy."
+    </string>
+
+    <string name="x_bottom_dialog_single_select_title">"Select Country"</string>
+    <string name="x_bottom_dialog_multi_select_title">"Select City"</string>
+    <string name="x_bottom_dialog_done_title">"Reset Complete"</string>
+    <string name="x_bottom_dialog_loading_title">"Resetting data …"</string>
+    <string name="x_bottom_dialog_simple_title">"Do you want to revoke USB debugging access for all computers you previously authorized?"</string>
+    <string name="x_bottom_dialog_input_title">"Modify Device name"</string>
+    <string name="x_center_dialog_title">"Kind tips"</string>
+    <string name="x_center_dialog_message_1">"This is a center dialog, style 1"</string>
+    <string name="x_center_dialog_message_2">"This is a center dialog, style 2"</string>
+    <string name="x_center_dialog_message_3">"Are you sure you want to delete the two files?"</string>
+    <string name="x_center_dialog_message_4">"A center dialog of the single button"</string>
+    <string name="x_center_dialog_message_5">"The current task will consume 100.0M of traffic. You can choose WiFi smart download, which will automatically consume zero traffic after connecting to WiFi."</string>
+    <string name="x_center_dialog_positive_button_delete">"Delete"</string>
+    <string name="x_float_dialog_message_done">"Done"</string>
+    <string name="x_float_dialog_message_alert">"Alert"</string>
+    <string name="x_float_dialog_message_error">"Error"</string>
+    <string name="x_special_dialog_time_picker_title">"Time Picker Dialog"</string>
+    <string name="x_special_dialog_date_picker_title">"Date Picker Dialog"</string>
+</resources>

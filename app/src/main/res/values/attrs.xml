@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <declare-styleable name="XCard">
+        <attr name="cardGradient" format="integer"/>
+        <attr name="cardTitle" format="string"/>
+        <attr name="cardSummary" format="string"/>
+    </declare-styleable>
+
+    <declare-styleable name="XSmallCard">
+        <attr name="smallCardGradient" format="integer"/>
+        <attr name="smallCardTitle" format="string"/>
+        <attr name="smallCardSummary" format="string"/>
+    </declare-styleable>
+</resources>

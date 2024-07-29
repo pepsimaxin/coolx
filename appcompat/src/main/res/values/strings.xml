@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="common_confirm">OK</string>
+    <string name="common_cancel">Cancel</string>
+
+    <string name="coolx_date_picker_year">y</string>
+    <string name="coolx_date_picker_month">m</string>
+    <string name="coolx_date_picker_day">d</string>
+
+    <string name="coolx_time_picker_hour">h</string>
+    <string name="coolx_time_picker_minute">m</string>
+    <string name="coolx_time_picker_second">s</string>
+
+    <string name="coolx_coolbar_string_placeholder">""</string>
+</resources>

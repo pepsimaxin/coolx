@@ -1,0 +1,59 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <!-- These attributes are meant to be specified and customized by the app.
+     The system will read and apply them as needed. These attributes control
+     properties of the activity window, such as whether an action bar should
+     be present and whether it should overlay content. -->
+    <declare-styleable name="Window">
+        <!-- Flag indicating whether should show menu as immersion menu. -->
+        <attr name="immersionWindowBackground" format="reference|color" />
+    </declare-styleable>
+
+    <!-- ============ -->
+    <!-- Alert Dialog styles -->
+    <!-- ============ -->
+    <eat-comment />
+
+    <!-- Theme to use for alert dialogs spawned from this theme. -->
+    <attr name="alertDialogTheme" format="reference" />
+
+    <!-- The set of attributes that describe a AlertDialog's theme. -->
+    <declare-styleable name="AlertDialog">
+        <attr name="layout"/>
+        <attr name="buttonPanelSideLayout" format="reference"/>
+        <attr name="listLayout" format="reference"/>
+        <attr name="multiChoiceItemLayout" format="reference"/>
+        <attr name="singleChoiceItemLayout" format="reference"/>
+        <attr name="listItemLayout" format="reference"/>
+        <attr name="showTitle" format="boolean"/>
+    </declare-styleable>
+
+    <!-- The set of attributes that describe a YearPicker's theme. -->
+    <declare-styleable name="YearPicker">
+        <attr name="coolStartYear" format="integer"/>
+        <attr name="coolEndYear" format="integer"/>
+    </declare-styleable>
+
+    <!-- The set of attributes that describe a DatePicker's theme. -->
+    <declare-styleable name="DatePicker">
+        <attr name="wheelCyclic" format="boolean"/>
+    </declare-styleable>
+
+    <!-- The set of attributes that describe a TimePicker's theme. -->
+    <declare-styleable name="TimePicker">
+        <attr name="wheelCyclic"/>
+        <attr name="timePickerType">
+            <enum name="hms" value="0x10" />
+            <enum name="hm" value="0x20" />
+        </attr>
+    </declare-styleable>
+
+    <!-- The set of attributes that describe a EditText's theme. -->
+    <attr name="editTextStyle" format="reference" />
+
+    <!-- The set of attributes that describe a WheelPicker's theme. -->
+    <declare-styleable name="WheelPicker">
+        <attr name="itemMaximumWidthText" format="string"/>
+        <attr name="wheelCyclic"/>
+    </declare-styleable>
+</resources>

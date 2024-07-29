@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!-- 底部弹窗取消按钮按压效果样式 -->
+<selector xmlns:android="http://schemas.android.com/apk/res/android">
+
+    <!-- 按压状态 -->
+    <item android:drawable="@drawable/coolx_alert_dialog_negative_button_bg_pressed"
+        android:state_pressed="true" />
+
+    <!-- 选中状态 -->
+    <item android:drawable="@drawable/coolx_alert_dialog_negative_button_bg_default"
+        android:state_selected="true" />
+
+    <!-- 焦点状态 -->
+    <item android:drawable="@drawable/coolx_alert_dialog_negative_button_bg_focus"
+        android:state_focused="true" />
+
+    <!-- 默认状态 -->
+    <item android:drawable="@drawable/coolx_alert_dialog_negative_button_bg_default" />
+
+</selector>

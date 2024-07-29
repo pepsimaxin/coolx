@@ -1,0 +1,11 @@
+<resources>
+    <!-- Base application theme. -->
+    <style name="Base.Theme.Coolx" parent="Theme.AppCompat.DayNight">
+        <item name="colorPrimaryVariant">@color/x_color_primary_variant</item>
+        <!-- 全局替换 AlertDialog 主题 -->
+        <item name="alertDialogTheme">@style/CoolX.AlertDialog.Theme</item>
+        <item name="alertDialogStyle">@style/CoolX.AlertDialog.Style</item>
+    </style>
+
+    <style name="Theme.Coolx" parent="Base.Theme.Coolx" />
+</resources>

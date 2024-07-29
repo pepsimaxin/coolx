@@ -1,0 +1,105 @@
+<?xml version="1.0" encoding="utf-8"?>
+<animated-selector xmlns:android="http://schemas.android.com/apk/res/android">
+
+    <!-- 选中状态 -->
+    <item
+        android:id="@+id/state_on"
+        android:drawable="@drawable/coolx_checkbox_single_checked"
+        android:state_checked="true" />
+
+    <!-- 默认状态-->
+    <item
+        android:id="@+id/state_off"
+        android:drawable="@drawable/coolx_checkbox_single_normal" />
+
+    <transition
+        android:fromId="@id/state_off"
+        android:toId="@id/state_on">
+        <animated-vector xmlns:aapt="http://schemas.android.com/aapt">
+            <aapt:attr name="android:drawable">
+                <vector
+                    android:width="20dp"
+                    android:height="20dp"
+                    android:viewportWidth="40"
+                    android:viewportHeight="40">
+
+                    <group
+                        android:name="check_group"
+                        android:pivotX="20"
+                        android:pivotY="20"
+                        android:scaleX="1.0"
+                        android:scaleY="1.0">
+                        <path
+                            android:name="check"
+                            android:fillColor="#FF085DFF"
+                            android:pathData="M20,20m-19,0a19,19 0,1 1,38 0a19,19 0,1 1,-38 0" />
+                    </group>
+
+                    <group
+                        android:name="check_tag_group"
+                        android:pivotX="20"
+                        android:pivotY="20"
+                        android:scaleX="0.0"
+                        android:scaleY="0.0">
+                        <path
+                            android:name="check_tag"
+                            android:fillColor="#00000000"
+                            android:fillType="evenOdd"
+                            android:pathData="M10,20.8112l6.404,5.8554l13.596,-13.3333"
+                            android:strokeWidth="4"
+                            android:strokeColor="#FFFFFF"
+                            android:strokeLineCap="round"
+                            android:strokeLineJoin="round" />
+                    </group>
+
+                </vector>
+            </aapt:attr>
+
+            <target android:name="check">
+                <aapt:attr name="android:animation">
+                    <objectAnimator
+                        android:duration="150"
+                        android:interpolator="@anim/coolx_interpolator_checkbox_checked"
+                        android:propertyName="fillColor"
+                        android:valueFrom="#00000000"
+                        android:valueTo="#FF085DFF"
+                        android:valueType="colorType" />
+                </aapt:attr>
+            </target>
+
+            <target android:name="check_tag_group">
+                <aapt:attr name="android:animation">
+                    <set android:ordering="together">
+                        <objectAnimator
+                            android:duration="150"
+                            android:interpolator="@anim/coolx_interpolator_checkbox_checked"
+                            android:propertyName="scaleX"
+                            android:valueFrom="0.0"
+                            android:valueTo="1.0" />
+                        <objectAnimator
+                            android:duration="150"
+                            android:interpolator="@anim/coolx_interpolator_checkbox_checked"
+                            android:propertyName="scaleY"
+                            android:valueFrom="0.0"
+                            android:valueTo="1.0" />
+                    </set>
+                </aapt:attr>
+            </target>
+
+            <target android:name="check_tag">
+                <aapt:attr name="android:animation">
+                    <objectAnimator
+                        android:duration="100"
+                        android:interpolator="@anim/coolx_interpolator_checkbox_checked"
+                        android:propertyName="pathData"
+                        android:startOffset="150"
+                        android:valueFrom="M10,20.8112l6.404,5.8554l15.596,-15.3333"
+                        android:valueTo="M10,20.8112l6.404,5.8554l13.596,-13.3333"
+                        android:valueType="pathType" />
+                </aapt:attr>
+            </target>
+
+        </animated-vector>
+    </transition>
+
+</animated-selector>

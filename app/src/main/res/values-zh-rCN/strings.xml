@@ -1,0 +1,38 @@
+<resources>
+    <string name="app_name" translatable="false">COOLX</string>
+
+    <string name="x_dialog_type_default">"默认"</string>
+    <string name="x_dialog_type_center">"居中"</string>
+    <string name="x_dialog_type_float">"悬浮"</string>
+    <string name="x_dialog_type_special">"特殊"</string>
+
+    <string name="x_dialog_type_default_summary">"显示在底部的弹窗效果"</string>
+    <string name="x_dialog_type_center_summary">"居中显示的弹窗效果"</string>
+    <string name="x_dialog_type_float_summary">"悬浮类型的弹窗效果"</string>
+    <string name="x_dialog_type_special_summary">"例如：日期选择/时间选择类型的弹窗效果"</string>
+
+    <!-- Dialog String -->
+    <string name="x_bottom_dialog_title">"底部弹窗"</string>
+    <string name="x_bottom_dialog_message">
+        "在苍茫的大海上，狂风卷积着乌云，在乌云和大海之间有一只海燕在高傲地飞翔。\n一会儿翅膀碰着波浪，一会儿箭一般地直冲向乌云，它叫喊着，就在这鸟儿勇敢的叫喊声里，乌云听出了欢乐。"
+    </string>
+
+    <string name="x_bottom_dialog_single_select_title">"选择国家"</string>
+    <string name="x_bottom_dialog_multi_select_title">"选择城市"</string>
+    <string name="x_bottom_dialog_done_title">"重置完成"</string>
+    <string name="x_bottom_dialog_loading_title">"数据重置中 …"</string>
+    <string name="x_bottom_dialog_simple_title">"是否针对您之前授权的所有计算机撤销 USB 调试的访问权限？"</string>
+    <string name="x_bottom_dialog_input_title">"修改手机名称"</string>
+    <string name="x_center_dialog_title">"温馨提示"</string>
+    <string name="x_center_dialog_message_1">"这是一个居中类型的弹窗，样式 1"</string>
+    <string name="x_center_dialog_message_2">"这是一个居中类型的弹窗，样式 2"</string>
+    <string name="x_center_dialog_message_3">"是否确定删除 2 个文件？"</string>
+    <string name="x_center_dialog_message_4">"单按钮类型的居中弹窗 …"</string>
+    <string name="x_center_dialog_message_5">"当前任务将耗费 100.0M 流量，您可以选择 WiFi 智能下载，待连接 WiFi 后可自动零流量下载。"</string>
+    <string name="x_center_dialog_positive_button_delete">"删除"</string>
+    <string name="x_float_dialog_message_done">"已完成"</string>
+    <string name="x_float_dialog_message_alert">"警告"</string>
+    <string name="x_float_dialog_message_error">"错误"</string>
+    <string name="x_special_dialog_time_picker_title">"时间选择弹窗"</string>
+    <string name="x_special_dialog_date_picker_title">"日期选择弹窗"</string>
+</resources>

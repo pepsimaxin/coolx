@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <!-- Primary -->
+    <color name="x_color_primary">#FFFFFF</color>
+    <color name="x_color_primary_variant">#FFFFFF</color>
+
+    <color name="x_preference_arrow_light">#FFFFFF</color>
+    <color name="x_card_background_color">#F2F2FA</color>
+    <color name="x_card_title_color">#000000</color>
+</resources>

@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!-- 居中弹窗单个按钮场景的背景  -->
+<selector xmlns:android="http://schemas.android.com/apk/res/android">
+
+    <!-- 按压状态 -->
+    <item android:drawable="@drawable/coolx_center_dialog_single_button_bg_pressed"
+        android:state_pressed="true" />
+
+    <item android:drawable="@color/coolx_color_transparent"
+        android:state_enabled="false"/>
+
+    <!-- 默认状态 -->
+    <item android:drawable="@color/coolx_color_transparent" />
+
+</selector>

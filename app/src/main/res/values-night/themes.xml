@@ -1,0 +1,8 @@
+<resources>
+    <!-- Base application theme. -->
+    <style name="Base.Theme.Coolx" parent="Theme.Material3.DayNight.NoActionBar">
+        <!-- 全局替换 AlertDialog 主题 -->
+        <item name="alertDialogTheme">@style/CoolX.AlertDialog.Theme</item>
+        <item name="alertDialogStyle">@style/CoolX.AlertDialog.Style</item>
+    </style>
+</resources>

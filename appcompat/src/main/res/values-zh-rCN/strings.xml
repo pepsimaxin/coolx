@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="common_confirm">确定</string>
+    <string name="common_cancel">取消</string>
+
+    <string name="coolx_date_picker_year">年</string>
+    <string name="coolx_date_picker_month">月</string>
+    <string name="coolx_date_picker_day">日</string>
+
+    <string name="coolx_time_picker_hour">时</string>
+    <string name="coolx_time_picker_minute">分</string>
+    <string name="coolx_time_picker_second">秒</string>
+
+    <string name="coolx_coolbar_string_placeholder">""</string>
+</resources>

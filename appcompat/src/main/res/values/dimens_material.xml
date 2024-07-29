@@ -1,0 +1,30 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <!-- TextSize -->
+    <dimen name="coolx_text_size_t1_dp">28dp</dimen>                       <!-- T1 -->
+    <dimen name="coolx_text_size_t2_dp">20dp</dimen>                       <!-- T2 -->
+    <dimen name="coolx_text_size_t3_dp">17dp</dimen>                       <!-- T3 -->
+    <dimen name="coolx_text_size_t4_dp">15dp</dimen>                       <!-- T4 -->
+    <dimen name="coolx_text_size_t5_dp">14dp</dimen>                       <!-- T5 -->
+    <dimen name="coolx_text_size_t6_dp">13dp</dimen>                       <!-- T6 -->
+    <dimen name="coolx_text_size_t7_dp">12dp</dimen>                       <!-- T7 -->
+    <dimen name="coolx_text_size_t8_dp">11dp</dimen>                       <!-- T8 -->
+
+    <dimen name="coolx_text_size_t1_sp">28sp</dimen>                       <!-- T1 -->
+    <dimen name="coolx_text_size_t2_sp">20sp</dimen>                       <!-- T2 -->
+    <dimen name="coolx_text_size_t3_sp">17sp</dimen>                       <!-- T3 -->
+    <dimen name="coolx_text_size_t4_sp">15sp</dimen>                       <!-- T4 -->
+    <dimen name="coolx_text_size_t5_sp">14sp</dimen>                       <!-- T5 -->
+    <dimen name="coolx_text_size_t6_sp">13sp</dimen>                       <!-- T6 -->
+    <dimen name="coolx_text_size_t7_sp">12sp</dimen>                       <!-- T7 -->
+    <dimen name="coolx_text_size_t8_sp">11sp</dimen>                       <!-- T8 -->
+
+    <!-- Corners specification -->
+    <dimen name="coolx_radius_smallest">4dp</dimen>
+    <dimen name="coolx_radius_small">8dp</dimen>
+    <dimen name="coolx_radius_medium">12dp</dimen>
+    <dimen name="coolx_radius_large">16dp</dimen>
+    <dimen name="coolx_radius_largest">24dp</dimen>
+
+</resources>

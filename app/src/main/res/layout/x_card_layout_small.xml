@@ -1,0 +1,48 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="66dp"
+    android:orientation="vertical">
+    <LinearLayout
+        android:id="@+id/xCardGradient"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:paddingHorizontal="15dp"
+        android:orientation="horizontal"
+        android:background="@drawable/x_card_gradient_bottom_dialog_round"
+        tools:ignore="UselessParent">
+
+        <LinearLayout
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:gravity="center_vertical"
+            android:orientation="vertical">
+            <TextView
+                android:id="@+id/xCardTitle"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:textDirection="locale"
+                android:textColor="@color/x_card_title_color"
+                android:textSize="13sp"
+                android:textStyle="bold"
+                android:text="XTitle"/>
+
+            <TextView
+                android:id="@+id/xCardSummary"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="5dp"
+                android:textDirection="locale"
+                android:textSize="11sp"
+                android:text="XSummary"/>
+        </LinearLayout>
+
+        <ImageView
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:src="@drawable/x_arrow_right"/>
+
+    </LinearLayout>
+</LinearLayout>

@@ -1,0 +1,59 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="?attr/colorPrimaryVariant"
+    android:orientation="vertical">
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        tools:ignore="UselessParent">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:paddingHorizontal="15dp"
+            android:orientation="vertical">
+
+            <com.gorgeous.coolx.widget.XCard
+                android:id="@+id/bottomDialog"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="15dp"
+                app:cardGradient="@drawable/x_card_gradient_bottom_dialog"
+                app:cardTitle="@string/x_dialog_type_default"
+                app:cardSummary="@string/x_dialog_type_default_summary"/>
+
+            <com.gorgeous.coolx.widget.XCard
+                android:id="@+id/centerDialog"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="15dp"
+                app:cardGradient="@drawable/x_card_gradient_center_dialog"
+                app:cardTitle="@string/x_dialog_type_center"
+                app:cardSummary="@string/x_dialog_type_center_summary"/>
+
+            <com.gorgeous.coolx.widget.XCard
+                android:id="@+id/floatDialog"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="15dp"
+                app:cardGradient="@drawable/x_card_gradient_float_dialog"
+                app:cardTitle="@string/x_dialog_type_float"
+                app:cardSummary="@string/x_dialog_type_float_summary"/>
+
+            <com.gorgeous.coolx.widget.XCard
+                android:id="@+id/specialDialog"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="15dp"
+                app:cardGradient="@drawable/x_card_gradient_special_dialog"
+                app:cardTitle="@string/x_dialog_type_special"
+                app:cardSummary="@string/x_dialog_type_special_summary"/>
+
+        </LinearLayout>
+    </ScrollView>
+</LinearLayout>

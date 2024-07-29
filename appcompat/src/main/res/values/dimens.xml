@@ -1,0 +1,70 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <!--
+        *******************************************************************
+        *                                                                 *
+        *                           AlertDialog                           *
+        *                                                                 *
+        *******************************************************************
+    -->
+    <!-- Default/Bottom -->
+    <dimen name="coolx_alert_dialog_title_size">@dimen/coolx_text_size_t3_sp</dimen>
+    <dimen name="coolx_alert_dialog_title_padding_top_with_icon">8dp</dimen>
+    <dimen name="coolx_alert_dialog_title_padding_top_without_icon">24dp</dimen>
+    <dimen name="coolx_alert_dialog_message_size">@dimen/coolx_text_size_t4_sp</dimen>
+    <dimen name="coolx_alert_dialog_message_padding_top_with_title">8dp</dimen>
+    <dimen name="coolx_alert_dialog_message_padding_top_without_title">18dp</dimen>
+    <dimen name="coolx_alert_dialog_button_text_size">@dimen/coolx_text_size_t4_sp</dimen>
+    <dimen name="coolx_alert_dialog_divider_line_size">1px</dimen>
+    <dimen name="coolx_alert_dialog_button_divider_space">10dp</dimen>
+    <dimen name="coolx_alert_dialog_container_margin_start">16dp</dimen>
+    <dimen name="coolx_alert_dialog_container_margin_end">16dp</dimen>
+    <dimen name="coolx_alert_dialog_container_margin_top">28dp</dimen>
+    <dimen name="coolx_alert_dialog_container_margin_bottom_with_nav">52dp</dimen>
+    <dimen name="coolx_alert_dialog_container_margin_bottom_without_nav">16dp</dimen>
+    <dimen name="coolx_alert_dialog_listview_margin_horizontal">24dp</dimen>
+    <dimen name="coolx_alert_dialog_listview_margin_top">12dp</dimen>
+    <dimen name="coolx_alert_dialog_listview_margin_bottom">12dp</dimen>
+    <dimen name="coolx_alert_dialog_listview_margin_bottom_without_button">-2dp</dimen>
+    <dimen name="coolx_alert_dialog_custom_layout_padding_top">20dp</dimen>
+    <dimen name="coolx_alert_dialog_custom_layout_padding_top_special">12dp</dimen>
+    <dimen name="coolx_alert_dialog_custom_layout_padding_bottom">20dp</dimen>
+    <dimen name="coolx_alert_dialog_ime_margin">16dp</dimen>  <!-- 弹窗与输入法间距 -->
+
+    <!-- center -->
+    <dimen name="coolx_center_dialog_title_padding_top_without_icon">20dp</dimen>
+    <dimen name="coolx_center_dialog_message_padding_top_with_title">14dp</dimen>
+    <dimen name="coolx_center_dialog_message_padding_top_without_title">16dp</dimen>
+    <dimen name="coolx_center_dialog_message_padding_bottom_with_title">20dp</dimen>
+    <dimen name="coolx_center_dialog_message_padding_bottom_without_title">-2dp</dimen>
+    <dimen name="coolx_center_dialog_button_text_size">16dp</dimen>
+    <dimen name="coolx_center_dialog_container_margin_start">30dp</dimen>
+    <dimen name="coolx_center_dialog_container_margin_end">30dp</dimen>
+
+    <!-- Done -->
+    <dimen name="coolx_done_dialog_icon_padding_top">30dp</dimen>
+    <dimen name="coolx_done_dialog_title_padding_top_with_icon">8dp</dimen>
+    <dimen name="coolx_done_dialog_title_padding_bottom_with_icon">20dp</dimen>
+
+    <!-- Input -->
+    <dimen name="coolx_input_dialog_content_padding_top">20dp</dimen>
+    <dimen name="coolx_input_dialog_content_padding_bottom">5dp</dimen>
+
+    <!--
+        *******************************************************************
+        *                                                                 *
+        *                           WheelPicker                           *
+        *                                                                 *
+        *******************************************************************
+    -->
+    <dimen name="coolx_wheel_item_text_size">13sp</dimen>
+    <dimen name="coolx_wheel_item_text_size_selected">26sp</dimen>
+    <dimen name="coolx_wheel_item_space">12dp</dimen>
+    <dimen name="coolx_wheel_indicator_size">2dp</dimen>
+    <dimen name="coolx_wheel_indicator_text_size">13sp</dimen>
+    <dimen name="coolx_wheel_margins">8dp</dimen>
+    <dimen name="coolx_wheel_item_height_space">32dp</dimen>
+    <dimen name="coolx_wheel_item_width_space">32dp</dimen>
+
+</resources>

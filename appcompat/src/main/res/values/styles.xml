@@ -1,0 +1,249 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!--
+    Description: CoolX Style
+    Author     : Marco
+    Update     : 2024.07.25
+-->
+<resources xmlns:tools="http://schemas.android.com/tools">
+
+    <style name="CoolX" />
+    <style name="CoolX.Animation" />
+    <style name="CoolX.Animation.Activity" parent="android:Animation.Activity">
+        <item name="android:activityOpenEnterAnimation">@anim/coolx_animation_activity_open_enter</item>
+        <item name="android:activityOpenExitAnimation">@anim/coolx_animation_activity_open_exit</item>
+        <item name="android:activityCloseEnterAnimation">@anim/coolx_animation_activity_close_enter</item>
+        <item name="android:activityCloseExitAnimation">@anim/coolx_animation_activity_close_exit</item>
+    </style>
+
+    <!--
+        F: AlertDialog Base Theme: alertDialogTheme/alertDialogStyle
+        D: AlertDialog 根主题，去除原生蒙层暗色，内部全局内容进行了重构
+        E: 项目中实现 CoolX AlertDialog 效果，只需要「 配置主题 」及「 替换包名 」即可！
+            1. 替换主题
+               <item name="alertDialogTheme">@style/CoolX.AlertDialog.Theme</item>
+               <item name="alertDialogStyle">@style/CoolX.AlertDialog.Style</item>
+               或者不添加主题覆盖，代码中直接传入 style:
+               new AlertDialog(context, R.style.coolxDialogTheme)
+            2. 替换 androidx 包名
+               // import androidx.appcompat.app.AlertDialog
+                  import coolx.appcompat.app.AlertDialog
+    -->
+    <style name="CoolX.AlertDialog.Theme" parent="CoolX.ThemeOverlay.AppCompat.Dialog.Alert"/>
+    <style name="CoolX.ThemeOverlay.AppCompat.Dialog.Alert" parent="ThemeOverlay.AppCompat.Dialog.Alert">
+        <item name="android:backgroundDimEnabled">false</item>
+    </style>
+
+    <!-- D: 与 alertDialogTheme 绑定，缺一不可 -->
+    <style name="CoolX.AlertDialog.Style" parent="CoolX.AlertDialog.AppCompat"/>
+    <style name="CoolX.AlertDialog.AppCompat" parent="AlertDialog.AppCompat">
+        <item name="layout">@layout/coolx_alert_dialog_root</item>
+        <item name="listLayout">@layout/coolx_alert_dialog_select_material</item>
+        <item name="listItemLayout">@layout/coolx_alert_dialog_select_item_material</item>
+        <item name="multiChoiceItemLayout">@layout/coolx_alert_dialog_select_multichoice_material</item>
+        <item name="singleChoiceItemLayout">@layout/coolx_alert_dialog_select_singlechoice_material</item>
+        <item name="buttonIconDimen">@dimen/abc_alert_dialog_button_dimen</item>
+    </style>
+
+    <!--
+        F: Used to specify a coolx dialog theme
+        D: 用于创建 AlertDialog 传入自定义 style，从而实现 CoolX AlertDialog 效果
+        E: new AlertDialog(context, R.style.coolxDialogTheme)
+               .setTitle()
+               .setMessage()
+               .show()
+    -->
+    <style name="coolxDialogTheme" parent="Theme.AppCompat.Light.Dialog.Alert">
+        <item name="alertDialogTheme">@style/CoolX.ThemeOverlay.AppCompat.Dialog.Alert</item>
+        <item name="alertDialogStyle">@style/CoolX.AlertDialog.AppCompat</item>
+    </style>
+
+    <!--
+        F: Transparent Activity effect, suitable for the scene where the Dialog is directly pulled up from Activity
+        D: 用于 Activity onCreate() 直接拉起 AlertDialog 场景
+        E: <activity
+               android:name=".demo.alertdialog.bottom.TransparentActivity"
+               android:exported="false"
+               android:theme="@style/coolxTransparentActivityStyle" />
+    -->
+    <style name="coolxTransparentActivityStyle" parent="Theme.AppCompat.Light.Dialog.Alert">
+        <item name="android:backgroundDimEnabled">false</item>
+        <item name="android:windowBackground">@android:color/transparent</item>
+        <item name="windowNoTitle">true</item>
+        <item name="alertDialogTheme">@style/CoolX.ThemeOverlay.AppCompat.Dialog.Alert</item>
+        <item name="alertDialogStyle">@style/CoolX.AlertDialog.AppCompat</item>
+    </style>
+
+    <!-- D: AlertDialog Title 样式 -->
+    <style name="CoolX.AlertDialog.Title" parent="CoolX.AlertDialog.AppCompat.DialogTitle"/>
+    <style name="CoolX.AlertDialog.AppCompat.DialogTitle">
+        <item name="android:textSize">@dimen/coolx_alert_dialog_title_size</item>
+        <item name="android:textColor">@color/coolx_alert_dialog_title_color</item>
+        <item name="android:fontFamily">sans-serif-medium</item>
+    </style>
+
+    <!-- A 特殊用途: AlertDialog Title 样式 -->
+    <style name="CoolX.AlertDialog.AppCompat.DialogTitle.Transparent">
+        <item name="android:textSize">@dimen/coolx_alert_dialog_title_size</item>
+        <item name="android:textColor">@color/coolx_color_c5_6</item>
+        <item name="android:fontFamily">@font/special</item>
+    </style>
+
+    <!-- D: AlertDialog Message 样式 -->
+    <style name="CoolX.AlertDialog.Message" parent="CoolX.AlertDialog.AppCompat.DialogMessage"/>
+    <style name="CoolX.AlertDialog.AppCompat.DialogMessage">
+        <item name="android:textSize">@dimen/coolx_alert_dialog_message_size</item>
+        <item name="android:textColor">@color/coolx_alert_dialog_message_color</item>
+        <item name="android:letterSpacing">0.07</item>
+    </style>
+
+    <!-- D: AlertDialog 底部确定按钮 -->
+    <style name="CoolX.AlertDialog.PositiveButton" parent="CoolX.AlertDialog.AppCompat.PositiveButtonStyle"/>
+    <style name="CoolX.AlertDialog.AppCompat.PositiveButtonStyle" parent="Widget.AppCompat.Button.Borderless">
+        <item name="android:textSize">@dimen/coolx_alert_dialog_button_text_size</item>
+        <item name="android:textColor">@color/coolx_alert_dialog_positive_button_text_color</item>
+        <item name="android:gravity">center</item>
+        <item name="android:background">@drawable/coolx_alert_dialog_positive_button_bg</item>
+        <item name="android:maxLines">1</item>
+        <item name="android:maxLength">6</item>
+    </style>
+
+    <!-- A 特殊用途: AlertDialog 底部确定按钮 -->
+    <style name="CoolX.AlertDialog.AppCompat.ButtonStyle.A" parent="Widget.AppCompat.Button.Borderless">
+        <item name="android:textColor">@color/xxxxx_coolx_button_text_color_a_will_remove</item>
+        <item name="android:gravity">center</item>
+        <item name="android:background">#333333</item>
+        <item name="android:maxLines">1</item>
+        <item name="android:maxLength">6</item>
+        <item name="android:textAllCaps">true</item>
+        <item name="android:fontFamily">@font/special</item>
+        <item name="android:buttonCornerRadius" tools:ignore="NewApi">0dp</item>
+    </style>
+
+    <!-- D: AlertDialog 底部确定按钮（堆叠） -->
+    <style name="CoolX.AlertDialog.PositiveButton.Stack" parent="CoolX.AlertDialog.AppCompat.BottomStackPositiveButtonStyle"/>
+    <style name="CoolX.AlertDialog.AppCompat.BottomStackPositiveButtonStyle" parent="Widget.AppCompat.Button.Borderless">
+        <item name="android:textSize">@dimen/coolx_alert_dialog_button_text_size</item>
+        <item name="android:textColor">@color/coolx_alert_dialog_positive_button_text_color</item>
+        <item name="android:gravity">center</item>
+        <item name="android:background">@drawable/coolx_alert_dialog_positive_button_bg</item>
+        <item name="android:maxLines">1</item>
+        <item name="android:layout_marginBottom">5dp</item>
+    </style>
+
+    <!-- D: AlertDialog 底部取消按钮 -->
+    <style name="CoolX.AlertDialog.NegativeButton" parent="CoolX.AlertDialog.AppCompat.NegativeButtonStyle"/>
+    <style name="CoolX.AlertDialog.AppCompat.NegativeButtonStyle" parent="Widget.AppCompat.Button.Borderless">
+        <item name="android:textSize">@dimen/coolx_alert_dialog_button_text_size</item>
+        <item name="android:textColor">@color/coolx_alert_dialog_negative_button_text_color</item>
+        <item name="android:gravity">center</item>
+        <item name="android:background">@drawable/coolx_alert_dialog_negative_button_bg</item>
+        <item name="android:maxLines">1</item>
+        <item name="android:maxLength">5</item>
+    </style>
+
+    <!-- D: AlertDialog 底部取消按钮（堆叠） -->
+    <style name="CoolX.AlertDialog.NegativeButton.Stack" parent="CoolX.AlertDialog.AppCompat.BottomStackNegativeButtonStyle"/>
+    <style name="CoolX.AlertDialog.AppCompat.BottomStackNegativeButtonStyle" parent="Widget.AppCompat.Button.Borderless">
+        <item name="android:textSize">@dimen/coolx_alert_dialog_button_text_size</item>
+        <item name="android:textColor">@color/coolx_alert_dialog_negative_button_text_color</item>
+        <item name="android:gravity">center</item>
+        <item name="android:background">@drawable/coolx_alert_dialog_negative_button_bg</item>
+        <item name="android:maxLines">1</item>
+        <item name="android:layout_marginTop">5dp</item>
+        <item name="android:layout_marginBottom">24dp</item>
+    </style>
+
+    <!-- TODO: 具体使用场景有没有问题还没有测试 -->
+    <!-- D: AlertDialog 底部中性按钮 -->
+    <style name="CoolX.AlertDialog.NeutralButton" parent="CoolX.AlertDialog.AppCompat.NeutralButtonStyle"/>
+    <style name="CoolX.AlertDialog.AppCompat.NeutralButtonStyle" parent="Widget.AppCompat.Button.Borderless">
+        <item name="android:textSize">@dimen/coolx_alert_dialog_button_text_size</item>
+        <item name="android:textColor">#404040</item>
+        <item name="android:gravity">center</item>
+        <item name="android:background">@drawable/coolx_alert_dialog_negative_button_bg</item>
+        <item name="android:maxLines">1</item>
+        <item name="android:maxLength">5</item>
+    </style>
+
+    <!-- D: AlertDialog 居中确定按钮 -->
+    <style name="CoolX.CenterDialog.PositiveButton" parent="CoolX.AlertDialog.AppCompat.CenterPositiveButtonStyle"/>
+    <style name="CoolX.AlertDialog.AppCompat.CenterPositiveButtonStyle" parent="Widget.AppCompat.Button.Borderless">
+        <item name="android:textSize">@dimen/coolx_center_dialog_button_text_size</item>
+        <item name="android:textColor">@color/coolx_center_dialog_positive_button_text_color</item>
+        <item name="android:background">@drawable/coolx_center_dialog_positive_button_bg</item>
+        <item name="android:maxLines">1</item>
+        <item name="android:maxLength">5</item>
+    </style>
+
+    <!-- D: AlertDialog 居中确定按钮（堆叠） -->
+    <style name="CoolX.CenterDialog.PositiveButton.Stack" parent="CoolX.AlertDialog.AppCompat.StackPositiveButtonStyle"/>
+    <style name="CoolX.AlertDialog.AppCompat.StackPositiveButtonStyle" parent="Widget.AppCompat.Button.Borderless">
+        <item name="android:textSize">@dimen/coolx_center_dialog_button_text_size</item>
+        <item name="android:textColor">@color/coolx_center_dialog_positive_button_text_color</item>
+        <item name="android:background">@drawable/coolx_center_dialog_stack_positive_button_bg</item>
+        <item name="android:maxLines">1</item>
+    </style>
+
+    <!-- D: AlertDialog 居中取消按钮 -->
+    <style name="CoolX.CenterDialog.NegativeButton" parent="CoolX.AlertDialog.AppCompat.CenterNegativeButtonStyle"/>
+    <style name="CoolX.AlertDialog.AppCompat.CenterNegativeButtonStyle" parent="Widget.AppCompat.Button.Borderless">
+        <item name="android:textSize">@dimen/coolx_center_dialog_button_text_size</item>
+        <item name="android:textColor">@color/coolx_center_dialog_negative_button_text_color_black</item>
+        <item name="android:background">@drawable/coolx_center_dialog_negative_button_bg</item>
+        <item name="android:maxLines">1</item>
+        <item name="android:maxLength">5</item>
+    </style>
+
+    <!-- D: AlertDialog 居中取消按钮（堆叠） -->
+    <style name="CoolX.CenterDialog.NegativeButton.Stack" parent="CoolX.AlertDialog.AppCompat.StackNegativeButtonStyle"/>
+    <style name="CoolX.AlertDialog.AppCompat.StackNegativeButtonStyle" parent="Widget.AppCompat.Button.Borderless">
+        <item name="android:textSize">@dimen/coolx_center_dialog_button_text_size</item>
+        <item name="android:textColor">@color/coolx_center_dialog_negative_button_text_color_black</item>
+        <item name="android:background">@drawable/coolx_center_dialog_stack_negative_button_bg</item>
+        <item name="android:maxLines">1</item>
+    </style>
+
+    <!--
+        F: Transparent Activity effect, suitable for the scene where the Dialog is directly pulled up from Activity
+        D: 用于 Activity onCreate() 直接拉起 AlertDialog 场景
+        E: <activity
+               android:name=".demo.alertdialog.bottom.TransparentActivity"
+               android:exported="false"
+               android:theme="@style/coolxTransparentActivityStyle" />
+    -->
+
+    <!--
+        F: EditText Style
+        E: <EditText
+            style="@style/CoolX.EditText"
+            ... .../>
+    -->
+    <style name="CoolX.EditText" parent="CoolX.Widget.AppCompat.EditText"/>
+    <style name="CoolX.Widget.AppCompat.EditText" parent="Widget.AppCompat.EditText">
+        <item name="android:singleLine">true</item>
+        <item name="android:background">@drawable/coolx_edit_text_bg</item>
+        <item name="android:textAppearance">@style/CoolX.AppCompat.TextAppearance.Widget.EditText</item>
+        <item name="android:gravity">start|center_vertical</item>
+        <item name="android:paddingStart">20dp</item>
+        <item name="android:paddingEnd">20dp</item>
+        <item name="android:textAlignment">viewStart</item>
+        <item name="android:textColor">@drawable/coolx_edit_text_content_color</item>
+        <item name="android:textCursorDrawable">@drawable/coolx_edit_text_cursor</item>
+        <item name="android:minHeight">44dp</item>
+        <item name="android:maxHeight">44dp</item>
+    </style>
+
+    <!-- D: EditText TextAppearance -->
+    <style name="CoolX.AppCompat.TextAppearance.Widget.EditText" parent="">
+        <item name="android:textSize">16sp</item>
+        <item name="android:textStyle">normal</item>
+    </style>
+
+    <!-- D: Horizontal Progress -->
+    <style name="CoolX.Widget.AppCompat.ProgressBar.Horizontal" parent="Widget.AppCompat.ProgressBar.Horizontal">
+        <item name="android:progressDrawable">@drawable/coolx_preset_icon_progress_drawable</item>
+        <item name="android:minHeight">16dip</item>
+        <item name="android:maxHeight">16dip</item>
+    </style>
+
+</resources>

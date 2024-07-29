@@ -1,0 +1,38 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <color name="coolx_status_bar_color">#000000</color>
+    <color name="coolx_nav_bar_color">#000000</color>
+
+    <!-- AlertDialog -->
+    <!-- Default/Bottom -->
+    <color name="coolx_alert_dialog_title_color">@color/coolx_color_c5_6</color>
+    <color name="coolx_alert_dialog_message_color">@color/coolx_color_c5_6</color>
+    <color name="coolx_alert_dialog_container_background">#333333</color>
+    <color name="coolx_alert_dialog_select_single_choice_text_color">@color/coolx_color_c5_6</color>
+    <color name="coolx_alert_dialog_select_multi_choice_text_color">@color/coolx_color_c5_6</color>
+
+    <!-- Center -->
+    <color name="coolx_center_dialog_common_cancel_text_color_1">@color/coolx_color_c3_2</color>
+    <color name="coolx_center_dialog_common_cancel_text_color_2">@color/coolx_color_c1_2</color>
+    <color name="coolx_center_dialog_container_background">#333333</color>
+    <color name="coolx_center_dialog_divider_line_color">#4DEFEFEF</color>
+
+    <!-- Float -->
+    <color name="coolx_float_dialog_container_bg">#D9333333</color>
+    <color name="coolx_float_dialog_error_icon_fill_color">@color/coolx_color_white</color>
+    <color name="coolx_float_dialog_message_color">@color/coolx_color_white</color>
+
+    <!-- EditText -->
+    <color name="coolx_edittext_text_color_focus">@color/coolx_color_c1_4</color>
+    <color name="coolx_edittext_text_color">@color/coolx_color_c5_6</color>
+    <color name="coolx_edittext_background">#4F4F4F</color>
+
+    <!-- WheelPicker -->
+    <color name="coolx_wheelpicker_divider">#cccccc</color>
+    <color name="coolx_wheelpicker_item_text_color">#FFFFFF</color>
+    <color name="coolx_wheelpicker_item_text_color_selected">#085DFF</color>
+    <color name="coolx_wheelpicker_indicator_text_color">#FFFFFF</color>
+
+    <!-- ProgressBar -->
+    <color name="coolx_progress_bar_percent_text_color">#FFFFFF</color>
+</resources>

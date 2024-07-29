@@ -1,0 +1,160 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="?attr/colorPrimaryVariant"
+    android:orientation="vertical">
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:scrollbars="none"
+        tools:ignore="UselessParent">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginHorizontal="15dp"
+            android:orientation="vertical">
+
+            <com.gorgeous.coolx.widget.XSmallCard
+                android:id="@+id/bottomDialog"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="15dp"
+                app:smallCardGradient="@drawable/x_card_gradient_bottom_dialog_round"
+                app:smallCardTitle="常规样式"
+                app:smallCardSummary="图标/标题/正文/按钮"/>
+
+            <com.gorgeous.coolx.widget.XSmallCard
+                android:id="@+id/bottomDialogNoIcon"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="15dp"
+                app:smallCardGradient="@drawable/x_card_gradient_bottom_dialog_round"
+                app:smallCardTitle="常规样式"
+                app:smallCardSummary="标题/正文/按钮"/>
+
+            <com.gorgeous.coolx.widget.XSmallCard
+                android:id="@+id/bottomDialogStack"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="15dp"
+                app:smallCardGradient="@drawable/x_card_gradient_bottom_dialog_round"
+                app:smallCardTitle="常规样式"
+                app:smallCardSummary="堆叠按钮"/>
+
+            <com.gorgeous.coolx.widget.XSmallCard
+                android:id="@+id/bottomDialogSingleSelect"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="15dp"
+                app:smallCardGradient="@drawable/x_card_gradient_bottom_dialog_round"
+                app:smallCardTitle="选择弹窗"
+                app:smallCardSummary="单选"/>
+
+            <com.gorgeous.coolx.widget.XSmallCard
+                android:id="@+id/bottomDialogMultiSelect"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="15dp"
+                app:smallCardGradient="@drawable/x_card_gradient_bottom_dialog_round"
+                app:smallCardTitle="选择弹窗"
+                app:smallCardSummary="多选"/>
+
+            <com.gorgeous.coolx.widget.XSmallCard
+                android:id="@+id/bottomDialogDone"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="15dp"
+                app:smallCardGradient="@drawable/x_card_gradient_bottom_dialog_round"
+                app:smallCardTitle="完成弹窗"
+                app:smallCardSummary=""/>
+
+            <com.gorgeous.coolx.widget.XSmallCard
+                android:id="@+id/bottomDialogInput"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="15dp"
+                app:smallCardGradient="@drawable/x_card_gradient_bottom_dialog_round"
+                app:smallCardTitle="输入弹窗"
+                app:smallCardSummary=""/>
+
+            <com.gorgeous.coolx.widget.XSmallCard
+                android:id="@+id/bottomDialogLoading"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="15dp"
+                app:smallCardGradient="@drawable/x_card_gradient_bottom_dialog_round"
+                app:smallCardTitle="加载弹窗"
+                app:smallCardSummary="用于 Loading 提示"/>
+
+            <com.gorgeous.coolx.widget.XSmallCard
+                android:id="@+id/loadingDone"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="15dp"
+                app:smallCardGradient="@drawable/x_card_gradient_bottom_dialog_round"
+                app:smallCardTitle="加载弹窗"
+                app:smallCardSummary="自动切换完成图标"/>
+
+            <com.gorgeous.coolx.widget.XSmallCard
+                android:id="@+id/bottomDialogSimple"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="15dp"
+                app:smallCardGradient="@drawable/x_card_gradient_bottom_dialog_round"
+                app:smallCardTitle="极简弹窗"
+                app:smallCardSummary="仅有 Message"/>
+
+            <com.gorgeous.coolx.widget.XSmallCard
+                android:id="@+id/bottomDialogProgressBar"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="15dp"
+                app:smallCardGradient="@drawable/x_card_gradient_bottom_dialog_round"
+                app:smallCardTitle="ProgressBar 场景"
+                app:smallCardSummary="模版"/>
+
+            <com.gorgeous.coolx.widget.XSmallCard
+                android:id="@+id/bottomDialogProgressBarNoMessage"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="15dp"
+                app:smallCardGradient="@drawable/x_card_gradient_bottom_dialog_round"
+                app:smallCardTitle="ProgressBar 场景"
+                app:smallCardSummary="标准"/>
+
+            <com.gorgeous.coolx.widget.XSmallCard
+                android:id="@+id/bottomDialogProgressBarPercent"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="15dp"
+                app:smallCardGradient="@drawable/x_card_gradient_bottom_dialog_round"
+                app:smallCardTitle="ProgressBar 场景"
+                app:smallCardSummary="仅百分比"/>
+
+            <com.gorgeous.coolx.widget.XSmallCard
+                android:id="@+id/bottomDialogTransparentActivity"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="15dp"
+                app:smallCardGradient="@drawable/x_card_gradient_bottom_dialog_round"
+                app:smallCardTitle="特殊用法"
+                app:smallCardSummary="Activity 拉起 Dialog"/>
+
+            <com.gorgeous.coolx.widget.XSmallCard
+                android:id="@+id/bottomDialogAlertActivity"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="15dp"
+                android:layout_marginBottom="15dp"
+                app:smallCardGradient="@drawable/x_card_gradient_bottom_dialog_round"
+                app:smallCardTitle="特殊用法"
+                app:smallCardSummary="AlertActivity"/>
+
+        </LinearLayout>
+    </ScrollView>
+</LinearLayout>

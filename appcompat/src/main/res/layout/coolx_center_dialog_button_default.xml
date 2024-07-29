@@ -1,0 +1,56 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:orientation="vertical">
+
+    <View
+        android:id="@+id/horizontal_divider_line"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/coolx_alert_dialog_divider_line_size"
+        android:background="@color/coolx_center_dialog_divider_line_color" />
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layoutDirection="locale"
+        android:orientation="horizontal">
+
+        <Button
+            android:id="@+id/button3"
+            style="@style/CoolX.AlertDialog.AppCompat.CenterNegativeButtonStyle"
+            android:layout_width="0dip"
+            android:layout_gravity="start"
+            android:layout_weight="1"
+            android:layout_height="wrap_content"
+            android:textColor="@color/coolx_center_dialog_negative_button_text_color_black"
+            android:text="CoolX"/>
+
+        <Button
+            android:id="@+id/button2"
+            style="@style/CoolX.AlertDialog.AppCompat.CenterNegativeButtonStyle"
+            android:layout_width="0dip"
+            android:layout_gravity="start"
+            android:layout_weight="1"
+            android:layout_height="wrap_content"
+            android:textColor="@color/coolx_center_dialog_negative_button_text_color_black"
+            android:text="CoolX"/>
+
+        <View
+            android:id="@+id/vertical_divider_line"
+            android:layout_width="@dimen/coolx_alert_dialog_divider_line_size"
+            android:layout_height="match_parent"
+            android:background="@color/coolx_center_dialog_divider_line_color"/>
+
+        <Button
+            android:id="@+id/button1"
+            style="@style/CoolX.AlertDialog.AppCompat.CenterPositiveButtonStyle"
+            android:layout_width="0dip"
+            android:layout_gravity="end"
+            android:layout_weight="1"
+            android:layout_height="wrap_content"
+            android:text="CoolX"/>
+
+    </LinearLayout>
+</LinearLayout>

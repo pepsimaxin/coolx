@@ -1,0 +1,40 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <!-- Font Color -->
+    <color name="coolx_color_c5_1">#000000</color>                    <!-- C5-1 -->
+    <color name="coolx_color_c5_2">#404040</color>                    <!-- C5-2 -->
+    <color name="coolx_color_c5_3">#8A8A8A</color>                    <!-- C5-3 -->
+    <color name="coolx_color_c5_4">#E2E2E2</color>                    <!-- C5-4 -->
+    <color name="coolx_color_c5_5">#F5F5F5</color>                    <!-- C5-5 -->
+    <color name="coolx_color_c5_6">#FFFFFF</color>                    <!-- C5-6 -->
+
+    <!-- Brand Color -->
+    <color name="coolx_color_c1_1">#0550C8</color>                    <!-- C1-1 -->
+    <color name="coolx_color_c1_2">#085DFF</color>                    <!-- C1-2 -->
+    <color name="coolx_color_c1_3">#CEDFFF</color>                    <!-- C1-3 -->
+    <color name="coolx_color_c1_4">#F5F9FF</color>                    <!-- C1-4 -->
+
+    <!-- Error Color -->
+    <color name="coolx_color_c3_1">#D02920</color>                    <!-- C3-1 -->
+    <color name="coolx_color_c3_2">#FF372C</color>                    <!-- C3-2 -->
+    <color name="coolx_color_c3_3">#F6D4D2</color>                    <!-- C3-3 -->
+    <color name="coolx_color_c3_4">#FAECEB</color>                    <!-- C3-4 -->
+
+    <!-- Success Color -->
+    <color name="coolx_color_c2_1">#049B54</color>                    <!-- C2-1 -->
+    <color name="coolx_color_c2_2">#00BF65</color>                    <!-- C2-2 -->
+    <color name="coolx_color_c2_3">#D1F3E3</color>                    <!-- C2-3 -->
+    <color name="coolx_color_c2_4">#F0F7F4</color>                    <!-- C2-4 -->
+
+    <!-- Warning/Reminder Color -->
+    <color name="coolx_color_c4_1">#DABB16</color>                    <!-- C4-1 -->
+    <color name="coolx_color_c4_2">#FFD700</color>                    <!-- C4-2 -->
+    <color name="coolx_color_c4_3">#FFF6C6</color>                    <!-- C4-3 -->
+    <color name="coolx_color_c4_4">#FAF7E6</color>                    <!-- C4-4 -->
+
+    <!-- Common Color -->
+    <color name="coolx_color_transparent">#00000000</color>           <!-- Transparent -->
+    <color name="coolx_color_white">#FFFFFF</color>                   <!-- White       -->
+    <color name="coolx_color_black">#000000</color>                   <!-- Black       -->
+    <color name="coolx_color_blue">#085DFF</color>                    <!-- Blue        -->
+</resources>

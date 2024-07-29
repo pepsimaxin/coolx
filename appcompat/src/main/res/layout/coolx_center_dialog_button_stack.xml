@@ -1,0 +1,42 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:orientation="vertical">
+
+    <View
+        android:id="@+id/stack_divider_line_1"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/coolx_alert_dialog_divider_line_size"
+        android:background="@color/coolx_center_dialog_divider_line_color" />
+
+    <Button
+        android:id="@+id/button1"
+        style="@style/CoolX.AlertDialog.AppCompat.StackPositiveButtonStyle"
+        android:layout_width="match_parent"
+        android:layout_gravity="center"
+        android:layout_height="wrap_content"
+        android:text="CoolX"/>
+
+    <View
+        android:id="@+id/stack_divider_line_2"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/coolx_alert_dialog_divider_line_size"
+        android:background="@color/coolx_center_dialog_divider_line_color" />
+
+    <Button
+        android:id="@+id/button2"
+        style="@style/CoolX.AlertDialog.AppCompat.StackNegativeButtonStyle"
+        android:layout_width="match_parent"
+        android:layout_gravity="center"
+        android:layout_height="wrap_content"
+        android:text="CoolX"/>
+
+    <Button
+        android:id="@+id/button3"
+        style="@style/CoolX.AlertDialog.AppCompat.StackNegativeButtonStyle"
+        android:layout_width="match_parent"
+        android:layout_gravity="center"
+        android:layout_height="wrap_content"
+        android:text="CoolX"/>
+</LinearLayout>

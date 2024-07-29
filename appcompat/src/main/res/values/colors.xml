@@ -1,0 +1,89 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <color name="coolx_status_bar_color">#FFFFFF</color>
+    <color name="coolx_nav_bar_color">#FFFFFF</color>
+
+    <!--
+        *******************************************************************
+        *                                                                 *
+        *                           AlertDialog                           *
+        *                                                                 *
+        *******************************************************************
+    -->
+    <!-- Default/Bottom -->
+    <color name="coolx_alert_dialog_title_color">@color/coolx_color_c5_1</color>
+    <color name="coolx_alert_dialog_message_color">@color/coolx_color_c5_2</color>
+    <color name="coolx_alert_dialog_positive_button_text_color">@color/coolx_color_c5_6</color>
+    <color name="coolx_alert_dialog_container_background">@color/coolx_color_white</color>
+    <color name="coolx_alert_dialog_select_single_choice_text_color">@color/coolx_color_c5_1</color>
+    <color name="coolx_alert_dialog_select_multi_choice_text_color">@color/coolx_color_c5_1</color>
+    <color name="coolx_alert_dialog_positive_button_text_color_disabled">@color/coolx_color_c5_4</color>
+
+    <!-- Center -->
+    <color name="coolx_center_dialog_common_cancel_text_color_1">@color/coolx_color_c3_2</color>
+    <color name="coolx_center_dialog_common_cancel_text_color_2">@color/coolx_color_c5_1</color>
+    <color name="coolx_center_dialog_container_background">@color/coolx_color_white</color>
+    <color name="coolx_center_dialog_divider_line_color">#ECECEC</color>
+
+    <!-- Loading -->
+    <color name="coolx_loading_view_circle_color">#E7EFFF</color>
+    <color name="coolx_loading_view_arc_color">@color/coolx_color_blue</color>
+
+    <!-- Float -->
+    <color name="coolx_float_dialog_container_bg">#D9000000</color>
+    <color name="coolx_float_dialog_error_icon_fill_color">@color/coolx_color_white</color>
+    <color name="coolx_float_dialog_message_color">@color/coolx_color_white</color>
+
+    <!--
+        *******************************************************************
+        *                                                                 *
+        *                            EditText                             *
+        *                                                                 *
+        *******************************************************************
+    -->
+    <color name="coolx_edittext_text_color_focus">@color/coolx_color_c1_2</color>
+    <color name="coolx_edittext_text_color">@color/coolx_color_c5_1</color>
+    <color name="coolx_edittext_background">#FAFCFF</color>
+
+    <!--
+        *******************************************************************
+        *                                                                 *
+        *                           DatePicker                            *
+        *                                                                 *
+        *******************************************************************
+    -->
+    <color name="coolx_datepicker_selected_text_color">@color/coolx_color_c1_2</color>
+    <color name="coolx_datepicker_divider">#cccccc</color>
+
+    <!--
+        *******************************************************************
+        *                                                                 *
+        *                           TimePicker                            *
+        *                                                                 *
+        *******************************************************************
+    -->
+    <color name="coolx_timepicker_selected_text_color">@color/coolx_color_c1_2</color>
+    <color name="coolx_timepicker_divider">#cccccc</color>
+
+    <!--
+        *******************************************************************
+        *                                                                 *
+        *                           WheelPicker                           *
+        *                                                                 *
+        *******************************************************************
+    -->
+    <color name="coolx_wheelpicker_divider">#cccccc</color>
+    <color name="coolx_wheelpicker_item_text_color">#000000</color>
+    <color name="coolx_wheelpicker_item_text_color_selected">#085DFF</color>
+    <color name="coolx_wheelpicker_indicator_text_color">#000000</color>
+
+
+    <!--
+        *******************************************************************
+        *                                                                 *
+        *                           ProgressBar                           *
+        *                                                                 *
+        *******************************************************************
+    -->
+    <color name="coolx_progress_bar_percent_text_color">#000000</color>
+</resources>

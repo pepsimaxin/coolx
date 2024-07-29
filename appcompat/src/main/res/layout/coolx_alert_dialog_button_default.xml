@@ -1,0 +1,46 @@
+<?xml version="1.0" encoding="utf-8"?>
+<coolx.appcompat.widget.ButtonBarLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:orientation="vertical">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginHorizontal="24dp"
+        android:layout_marginBottom="24dp"
+        android:layoutDirection="locale"
+        android:orientation="horizontal">
+
+        <Button
+            android:id="@+id/button3"
+            style="@style/CoolX.AlertDialog.AppCompat.NeutralButtonStyle"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:text="CoolX"/>
+
+        <Button
+            android:id="@+id/button2"
+            style="@style/CoolX.AlertDialog.AppCompat.NegativeButtonStyle"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:text="CoolX"/>
+
+        <View
+            android:id="@+id/divider"
+            android:layout_width="@dimen/coolx_alert_dialog_button_divider_space"
+            android:layout_height="match_parent"
+            android:background="@color/coolx_color_transparent" />
+
+        <Button
+            android:id="@+id/button1"
+            style="@style/CoolX.AlertDialog.AppCompat.PositiveButtonStyle"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:text="CoolX"/>
+
+    </LinearLayout>
+</coolx.appcompat.widget.ButtonBarLayout>

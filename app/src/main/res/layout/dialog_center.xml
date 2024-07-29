@@ -1,0 +1,78 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="?attr/colorPrimaryVariant"
+    android:orientation="vertical">
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:scrollbars="none"
+        tools:ignore="UselessParent">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginHorizontal="15dp"
+            android:orientation="vertical">
+
+            <com.gorgeous.coolx.widget.XSmallCard
+                android:id="@+id/centerDialog"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="15dp"
+                app:smallCardGradient="@drawable/x_card_gradient_center_dialog_round"
+                app:smallCardTitle="居中弹窗"
+                app:smallCardSummary="可设置取消按钮颜色"/>
+
+            <com.gorgeous.coolx.widget.XSmallCard
+                android:id="@+id/centerDialogRed"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="15dp"
+                app:smallCardGradient="@drawable/x_card_gradient_center_dialog_round"
+                app:smallCardTitle="居中弹窗"
+                app:smallCardSummary="红色取消按钮"/>
+
+            <com.gorgeous.coolx.widget.XSmallCard
+                android:id="@+id/centerDialogBlack"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="15dp"
+                app:smallCardGradient="@drawable/x_card_gradient_center_dialog_round"
+                app:smallCardTitle="居中弹窗"
+                app:smallCardSummary="黑色取消按钮"/>
+
+            <com.gorgeous.coolx.widget.XSmallCard
+                android:id="@+id/centerDialogSimple"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="15dp"
+                app:smallCardGradient="@drawable/x_card_gradient_center_dialog_round"
+                app:smallCardTitle="居中弹窗"
+                app:smallCardSummary="提示类型"/>
+
+            <com.gorgeous.coolx.widget.XSmallCard
+                android:id="@+id/centerDialogSingleButton"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="15dp"
+                app:smallCardGradient="@drawable/x_card_gradient_center_dialog_round"
+                app:smallCardTitle="居中弹窗"
+                app:smallCardSummary="单按钮"/>
+
+            <com.gorgeous.coolx.widget.XSmallCard
+                android:id="@+id/centerDialogStack"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="15dp"
+                app:smallCardGradient="@drawable/x_card_gradient_center_dialog_round"
+                app:smallCardTitle="居中弹窗"
+                app:smallCardSummary="堆叠样式"/>
+
+        </LinearLayout>
+    </ScrollView>
+</LinearLayout>

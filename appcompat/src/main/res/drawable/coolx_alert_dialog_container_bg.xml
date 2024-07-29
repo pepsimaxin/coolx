@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="utf-8"?>
+<shape xmlns:android="http://schemas.android.com/apk/res/android">
+    <solid android:color="@color/coolx_alert_dialog_container_background" />
+    <corners android:topLeftRadius="@dimen/coolx_radius_largest"
+        android:topRightRadius="@dimen/coolx_radius_largest"
+        android:bottomLeftRadius="@dimen/coolx_radius_largest"
+        android:bottomRightRadius="@dimen/coolx_radius_largest"/>
+    <stroke android:width="0dp" android:color="#000000" />
+</shape>
