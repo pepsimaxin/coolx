@@ -44,20 +44,10 @@ dependencyResolutionManagement {
 ```xml
 <!-- 你的 APP 主题. -->
 <style name="Base.Theme.Coolx" parent="Theme.AppCompat.DayNight">
- <!-- 全局替换 AlertDialog 主题 -->
- <item name="alertDialogTheme">@style/CoolX.AlertDialog.Theme</item>
- <item name="alertDialogStyle">@style/CoolX.AlertDialog.Style</item>
+    <!-- 全局替换 AlertDialog 主题 -->
+    <item name="alertDialogTheme">@style/CoolX.AlertDialog.Theme</item>
+    <item name="alertDialogStyle">@style/CoolX.AlertDialog.Style</item>
 </style>
-```
-
-或者不添加主题覆盖，代码中直接传入 style:
-
-```java
-// 单个界面影响
-new AlertDialog(getContext(), R.style.coolxDialogTheme)
-       .setTitle()
-       .setMessage()
-       .show();
 ```
 
 2. 替换 androidx 包名
