@@ -90,6 +90,10 @@ AlertDialog.Builder(this)
         .show()
 ```
 
+|Bottom 弹窗(常规 + 浅色) | Bottom 弹窗(常规 + 深色)|
+|:---:|:---:|
+|![](screenshot/light/bottom_dialog_normal.png)|![](screenshot/light/bottom_dialog_normal.png)|
+
 ```kotlin
 // 不带有 Icon 的常规弹窗
 AlertDialog.Builder(this)
