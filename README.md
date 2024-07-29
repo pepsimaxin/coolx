@@ -7,7 +7,7 @@
 ![Static Badge](https://img.shields.io/badge/minSdkVersion-29-yellow)
 ![Static Badge](https://img.shields.io/badge/license-Apache--2.0-red)
 
-![](https://s21.ax1x.com/2024/07/27/pkqeXqO.png)
+![](https://s21.ax1x.com/2024/07/29/pkL3shT.png)
 
 ## Implementation
 
