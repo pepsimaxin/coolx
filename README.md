@@ -11,7 +11,7 @@
 
 ## Implementation
 
-集成 CoolX 之前，请先将应用更新到 AndroidX 库，如项目使用库较老，请迁移至 [AndroidX](https://developer.android.google.cn/jetpack/androidx/migrate?hl=zh-cn)。
+集成 CoolX 之前，请先将项目更新到 AndroidX 库，如项目使用库较老，请迁移至 [AndroidX](https://developer.android.google.cn/jetpack/androidx/migrate?hl=zh-cn)。
 
 ![Static Badge](https://img.shields.io/badge/jitpack-0.0.1-green)
 
