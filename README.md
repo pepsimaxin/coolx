@@ -50,6 +50,16 @@ dependencyResolutionManagement {
 </style>
 ```
 
+或者不添加主题覆盖，代码中直接传入 style:
+
+```java
+// 单个界面影响
+new AlertDialog(getContext(), R.style.coolxDialogTheme)
+       .setTitle()
+       .setMessage()
+       .show();
+```
+
 2. 替换 androidx 包名
 
 ```java
