@@ -33,6 +33,8 @@ class DialogFragment : Fragment(), XClickIntention {
         _binding = FragmentDialogBinding.inflate(inflater, container, false)
         val root: View = binding.root
 
+        binding.toolbar.title = "CoolX Dialog"
+
         setOnClickListener(
             binding.bottomDialog,
             binding.centerDialog,

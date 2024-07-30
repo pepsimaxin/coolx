@@ -67,4 +67,21 @@
     <dimen name="coolx_wheel_item_height_space">32dp</dimen>
     <dimen name="coolx_wheel_item_width_space">32dp</dimen>
 
+    <!--
+        *******************************************************************
+        *                                                                 *
+        *                    CoolX Customized ToolBar                     *
+        *                                                                 *
+        *******************************************************************
+    -->
+    <dimen name="coolx_toolbar_title_size">17sp</dimen>
+
+    <!--
+        *******************************************************************
+        *                                                                 *
+        *                            ActionBar                            *
+        *                                                                 *
+        *******************************************************************
+    -->
+    <dimen name="coolx_text_size_title_material_actionbar">20dp</dimen>
 </resources>

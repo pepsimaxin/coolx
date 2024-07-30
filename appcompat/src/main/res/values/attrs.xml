@@ -56,4 +56,7 @@
         <attr name="itemMaximumWidthText" format="string"/>
         <attr name="wheelCyclic"/>
     </declare-styleable>
+
+    <!-- coolx.appcompat.widget.Toolbar -->
+    <attr name="toolbarStyle" format="reference"/>
 </resources>

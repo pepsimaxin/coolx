@@ -86,4 +86,23 @@
         *******************************************************************
     -->
     <color name="coolx_progress_bar_percent_text_color">#000000</color>
+
+    <!--
+        *******************************************************************
+        *                                                                 *
+        *                    Customized CoolX ToolBar                     *
+        *                                                                 *
+        *******************************************************************
+    -->
+    <color name="coolx_back_arrow_fill_color">#000000</color>
+    <color name="coolx_toolbar_title_color">#000000</color>
+
+    <!--
+        *******************************************************************
+        *                                                                 *
+        *                            ActionBar                            *
+        *                                                                 *
+        *******************************************************************
+    -->
+    <color name="coolx_text_color_title_material_actionbar">#000000</color>
 </resources>

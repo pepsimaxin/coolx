@@ -246,4 +246,31 @@
         <item name="android:maxHeight">16dip</item>
     </style>
 
+    <!--
+        F: Toolbar
+        D: Customized CoolX ToolBar
+    -->
+    <style name="CoolX.TextAppearance.Widget.AppCompat.Toolbar.Title"
+        parent="TextAppearance.Widget.AppCompat.Toolbar.Title">
+        <item name="android:textSize">@dimen/coolx_toolbar_title_size</item>
+        <item name="android:textColor">@color/coolx_toolbar_title_color</item>
+        <item name="fontFamily">sans-serif-medium</item>
+    </style>
+
+    <!-- D: ActionBar -->
+    <style name="CoolX.Widget.AppCompat.Light.ActionBar.Solid" parent="Widget.AppCompat.Light.ActionBar.Solid">
+        <item name="elevation">0dp</item>
+        <item name="background">@android:color/transparent</item>
+        <item name="titleTextStyle">@style/CoolX.TextAppearance.AppCompat.Widget.ActionBar.Title</item>
+    </style>
+
+    <style name="CoolX.TextAppearance.AppCompat.Widget.ActionBar.Title" parent="TextAppearance.AppCompat.Widget.ActionBar.Title">
+        <item name="android:textSize">@dimen/coolx_text_size_title_material_actionbar</item>
+        <item name="android:textColor">@color/coolx_text_color_title_material_actionbar</item>
+    </style>
+
+    <!-- D: override androidx.appcompat.widget.Toolbar -->
+    <style name="CoolX.Widget.AppCompat.Toolbar" parent="Widget.AppCompat.Toolbar">
+        <item name="android:background">@android:color/transparent</item>
+    </style>
 </resources>

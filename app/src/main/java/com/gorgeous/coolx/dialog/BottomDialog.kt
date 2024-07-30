@@ -24,6 +24,11 @@ class BottomDialog : AppCompatActivity(), XClickIntention {
         binding = DialogBottomBinding.inflate(layoutInflater)
         setContentView(binding.root)
 
+        binding.toolbar.title = resources.getString(R.string.x_bottom_dialog_title)
+        binding.toolbar.setNavigationOnClickListener {
+            finish()
+        }
+
         setOnClickListener(
             binding.bottomDialog,
             binding.bottomDialogNoIcon,
